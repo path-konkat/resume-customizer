@@ -1,8 +1,8 @@
 # Resume Customization App
-LLM-based application that will generate a customized resume and cover letter based on a job description input
+Streamline your job search with this LLM-based application that generates a customized resume and cover letter based on a job description input
 
 ## DESCRIPTION
-This repository contains python script for an application that returns a customized resume and cover letter for a job description submitted via the user interface. Using an LLM and your collection of past resumes and cover letters, the application 
+This repository contains python script for an application that uses local LLM (ollama) to generate customized versions of your resume and cover letter based on a job description submitted via the user interface. It does this by accessing an exisiting collection of past resumes and cover letters on which to build a new version customized for the role and company described.
 
 ## DEPENDENCIES
 * ollama (model 'phi3:mini') _(see [ollama documentation](https://ollama.com/) and [model documentation](https://ollama.com/library/phi3))_
@@ -12,20 +12,20 @@ This repository contains python script for an application that returns a customi
 
 ## INSTRUCTIONS
 To run application:
-1. Customize script for your use
+1. Customize for your use
     *   Fork this repository 
     *   Open [resume_customizer_app.py](resume_customizer_app.py) script and update filepath to folders containing resumes and cover letters. 
-2. Launch ollama server. 
+2. Launch ollama server 
     * Open command line interface
     * Run the `ollama serve` command
     * Minimize and allow to run in background
-3. Launch the app interface
+3. Launch the user interface
     * Open new command line interface window
     * Navigate to directory contain this repository
-    * Run the `streamlit run resume_customizer_app.py` command to launch the UI
+    * Run the `streamlit run resume_customizer_app.py` command to launch the user interface
 
 
 ## ATTRIBUTION
-* path.konkat, LLC | [www.pathkonkat/com](https://www.pathkonkat.com) | info@pathkonkat.com
-* Developer: [Jamie Bond](https:www.github.com/jbondai), Managing Principal | [path.konkat](https://www.pathkonkat.com)
+[Jamie Bond](https:www.github.com/jbondai), Managing Principal  
+[path.konkat, LLC](https://www.pathkonkat.com) | info@pathkonkat.com
 
